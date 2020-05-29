@@ -1,0 +1,15 @@
+public OnPlayerConnect(playerid)
+{
+    new string[64], pName[MAX_PLAYER_NAME];
+    GetPlayerName(playerid,pName,MAX_PLAYER_NAME);
+    format(string,sizeof string,"%s ä´éà¢éÒàÁ×Í§ÁÒ [%d]",pName,playerid);
+    SendClientMessageToAll(0xCC3399FF,string);
+    SendClientMessage(playerid, 0xCC0000FF, "ÂÔ¹´ÕµÍ¹ÃÑºÊÙèàÁ×Í§ [ª×èÍà«Ô¿]");
+    SendClientMessage(playerid, 0xCC0033FF, "à«Ô¿¹Õéà»ç¹á¹Ç [á¹ÇÍÐäÃ¡çÇèÒä»]");
+    SendClientMessage(playerid, 0xCC0066FF, "áÍ´ÁÔ¹à«Ô¿¹Õéª×èÍ [ª×èÍáÍ´ÁÔ¹]");
+    SendClientMessage(playerid, 0xCC0099FF, "áÍ´ÁÔ¹ãÊèã¨ÅÙ¡à«Ô¿·Ø¡¤¹");
+    SendClientMessage(playerid, 0xCC00CCFF, "ã¤Ã·ÕèÍÒÂØµèÓ¡ÇèÒ 13 »Õ ¤ÇÃ·ÓµÑÇ´Õæ");
+    SendClientMessage(playerid, 0xCC00FFFF, "¤¹àÅè¹à«Ô¿¹Õé[à·èÒäËÃè¡çÇèÒä»]");
+    SendClientMessage(playerid, 0xCC33FFFF, "¢Íº¤Ø³·ÕèÁÒàÅè¹à«Ô¿¹Õé¤ÃÑº¼Á");
+    return 1;
+}
